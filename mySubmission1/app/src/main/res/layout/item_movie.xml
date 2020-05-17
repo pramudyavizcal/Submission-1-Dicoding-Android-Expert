@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradienback"
+    android:padding="10dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/posterFilm"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:tint="@color/transparent"
+        android:src="@color/colorAccent"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txt_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/judul"
+        android:textColor="#ecfc03"
+        android:fontFamily="@font/keepfaith"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_judul"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:textSize="18sp"
+        android:fontFamily="@font/keepfaith"
+        android:maxLines="4"
+        android:textColor="@color/white"
+        android:text="@string/desk" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/calendar"
+                android:ellipsize="end"
+                android:padding="0dp"
+                android:textAlignment="center"
+                android:tint="#ecfc03"
+                android:maxLines="3"/>
+
+            <TextView
+                android:id="@+id/tanggalRilis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/keepfaith"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:text="@string/tahunRilis"/>                                                                                                                                                                                                                                                                                                               "@string/year"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:padding="0dp"
+                android:src="@drawable/star"
+                android:textAlignment="center"
+                android:tint="#ecfc03" />
+
+            <TextView
+                android:id="@+id/skorPengunjung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/keepfaith"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:text="@string/_95"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="0dp"
+                android:src="@drawable/timer"
+                android:tint="#ecfc03"
+                android:ellipsize="end"
+                android:textAlignment="center"
+                android:maxLines="3"/>
+
+            <TextView
+                android:id="@+id/durasiFilm"
+                android:layout_width="44dp"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:textSize="12sp"
+                android:fontFamily="@font/keepfaith"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:text="@string/_1h_0m"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

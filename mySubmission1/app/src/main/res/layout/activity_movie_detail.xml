@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/gradienback"
+    tools:context=".MyDetailMovies">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/posterFilm"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="fitXY"
+                android:src="@color/colorPrimary"/>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@id/posterFilm"
+                android:layout_marginStart="26dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/judul"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="2dp"
+                    android:textSize="18sp"
+                    android:textColor="#ecfc03"
+                    android:fontFamily="@font/keepfaith"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/txt_judul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/judul"
+                    android:fontFamily="@font/keepfaith"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"  />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="25dp"
+                    android:text="@string/status"
+                    android:textSize="18sp"
+                    android:textColor="#ecfc03"
+                    android:fontFamily="@font/keepfaith"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/statusFilm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/statusReleased"
+                    android:fontFamily="@font/keepfaith"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"  />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="25dp"
+                    android:text="@string/skorPengunjung"
+                    android:textSize="18sp"
+                    android:textColor="#ecfc03"
+                    android:fontFamily="@font/keepfaith"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/skorPengunjung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/skorDetail"
+                    android:fontFamily="@font/keepfaith"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"  />
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/genre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/genre"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:textColor="#ecfc03"
+                android:fontFamily="@font/keepfaith"
+                android:background="@drawable/gradienback"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="2"
+                >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/timer"
+                    android:ellipsize="end"
+                    android:paddingTop="15dp"
+                    android:tint="#ecfc03"
+                    android:textAlignment="center"
+                    android:maxLines="3"/>
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/language"
+                    android:ellipsize="end"
+                    android:paddingTop="15dp"
+                    android:tint="#ecfc03"
+                    android:textAlignment="center"
+                    android:maxLines="3"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/waktuTayang"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/keepfaith"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:textAlignment="center"
+                    android:text="@string/bahasaFilm"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/keepfaith"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/durasiFilm"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_1h_0m"
+                    android:fontFamily="@font/keepfaith"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textColor="#ecfc03"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/bahasaFilm"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:text="@string/english"
+                    android:fontFamily="@font/keepfaith"
+                    android:textSize="18sp"
+                    android:textColor="#ecfc03"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/overview"
+                    android:textAlignment="center"
+                    android:padding="15dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/keepfaith"
+                    android:background="@drawable/gradienback"
+                    android:textColor="#ecfc03"/>
+
+                <TextView
+                    android:id="@+id/overview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:textSize="16sp"
+                    android:textAlignment="center"
+                    android:text="@string/deskdetail"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/keepfaith"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
